@@ -1,19 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+}
+
+body {
+  background-color: #3b4071;
+  background: linear-gradient(45deg,  #362256, #3b4071);
+}
+
+h1 {
+  color: #d2d5e8;
+  text-align: center;
+  padding: 30px;
+  font-size: 200%;
+}
+
 .main-section {
   display: flex;
-  flex-direction: row;
-
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .invite-list {
+  background-color: #fefeff;
+  padding: 25px;
+  width: 60%;
+}
 
+.list-header {
+  margin-bottom: 20px;
 }
 
 .invited-hedgehog {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid #362256;
+  padding: 7.5px;
+}
+
+.name,
+.hoglet-number,
+.allergies {
+  width: 125px;
+}
+
+.hidden {
+  width: 60px;
+}
+
+.uninvite-btn {
+  outline: none;
+  border: none;
+  padding: 3px 5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: #d2d5e8;
+  color: #362256;
+  transition: all 0.5s;
+}
+
+.uninvite-btn:hover {
+  background-color: #9FA0BC;
 }
 
 .form-section {
   display: flex;
   flex-direction: column;
+  width: 60%;
+  background-color: #656794;
+  padding: 25px;
+  margin-bottom: 7.5%;
+}
+
+.invite-header {
+  margin-bottom: 20px;
+  color: #fefeff;
+}
+
+.hedgie-photo {
+  background-image: url(./assets/hedgie.jpg);
+  width: 30%;
+  height: 185px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.form {
+  width: 65%;
+}
+
+input,
+#invite-btn {
+  padding: 7.5px 10px;
+  width: 100%;
+  margin-bottom: 17.5px;
+  font-size: 90%;
+  outline: none;
+  border: none;
+}
+
+input::placeholder {
+  color: #3b4071;
+}
+
+#invite-btn {
+  background-color: #7fa0f4;
+  color: #fff;
+  transition: all 0.5s;
+  text-transform: uppercase;
+}
+
+#invite-btn:hover {
+  cursor: pointer;
+  background-color: #5e7dcf;
 }
