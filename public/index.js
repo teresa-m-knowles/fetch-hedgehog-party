@@ -2,11 +2,11 @@ const getHedgehogs = () => {
 
 };
 
-const addNewHedgehog = (event) => {
+const addNewHedgehog = () => {
 
 };
 
-const uninviteHedgehog = (event) => {
+const unInviteHedgehog = () => {
 
 };
 
@@ -16,4 +16,4 @@ $(document).ready(() => {
 
 $('#invite-btn').on('click', addNewHedgehog);
 
-$('#invited-hedgehogs-info').on('click', '.uninvite-btn', uninviteHedgehog);
+$('#invited-hedgehogs-info').on('click', '.uninvite-btn', unInviteHedgehog);
