@@ -1,13 +1,13 @@
 const getHedgehogs = () => {
   $('#hedgehog-info').html('');
   return fetch('http://localhost:3000/api/v1/invites')
-    .then(response => response.json())
-    .then(hedgehogs => getEachHedgehog(hedgehogs))
+    .then((response) => response.json())
+    .then((hedgehogs) => getEachHedgehog(hedgehogs))
     .catch((error) => console.error({ error }))
 };
 
 const getEachHedgehog = (hedgehogs) => {
-  return hedgehogs.forEach(hedgehog => {
+  return hedgehogs.forEach((hedgehog) => {
     renderHedgehog(hedgehog)
   });
 };
