@@ -11,7 +11,6 @@
       <h1>Hedgehog Party</h1>
     </nav>
     <main class="main-section">
-
       <section class="invite-list">
         <h2 class="list-header">Invitation List</h2>
         <div id="invited-hedgehogs-info">
@@ -21,11 +20,17 @@
             <p class="allergies"><strong>Allergies</strong></p>
             <div class="hidden"></div>
           </article>
+          <article class="invited-hedgehog">
+            <p class="name">Name</p>
+            <p class="hoglet-number">15</p>
+            <p class="allergies">Allergies</p>
+            <button id="${hedgehog.id}" class="uninvite-btn">
+              uninvite
+            </button>
+          </article>
           <div id="hedgehog-info"></div>
         </div>
-
       </section>
-
       <section class="form-section">
         <h2 class="invite-header">Invite another Hedgehog</h2>
         <form class="form-container" action="">
@@ -35,10 +40,9 @@
             <input id="allergies"type="text" name="" value="" placeholder="Allergies">
             <button id="invite-btn">Invite!</button>
           </article>
-          <div class="hedgie-photo"></div>
+        <div class="hedgie-photo"></div>
         </form>
       </section>
-
     </main>
     <script
     src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'>
