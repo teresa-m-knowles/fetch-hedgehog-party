@@ -1,0 +1,12 @@
+{
+  "name": "fetch-refresher-1801",
+  "version": "1.0.0",
+  "description": "Fetch Refresher Lesson BEM4",
+  "main": "server.js",
+  "scripts": {
+    "test": "test",
+    "start": "node server.js"
+  },
+  "author": "Amy Holt",
+  "license": "MIT"
+}

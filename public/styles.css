@@ -1,0 +1,19 @@
+.main-section {
+  display: flex;
+  flex-direction: row;
+
+}
+
+.invite-list {
+
+}
+
+.invited-hedgehog {
+  display: flex;
+  flex-direction: row;
+}
+
+.form-section {
+  display: flex;
+  flex-direction: column;
+}
