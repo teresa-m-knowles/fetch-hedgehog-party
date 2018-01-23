@@ -64,7 +64,7 @@ h1 {
 }
 
 .uninvite-btn:hover {
-  background-color: #9FA0BC;
+  background-color: #9fa0bc;
 }
 
 .form-section {
@@ -119,9 +119,9 @@ input::placeholder {
   color: #fff;
   transition: all 0.5s;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 #invite-btn:hover {
-  cursor: pointer;
   background-color: #5e7dcf;
 }

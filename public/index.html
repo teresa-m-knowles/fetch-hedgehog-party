@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <title>Hedgehog Party - Fetch Refresher</title>
@@ -7,17 +7,23 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <nav class="nav-bar">
+    <nav class="nav-bar" role="banner">
       <h1>Hedgehog Party</h1>
     </nav>
-    <main class="main-section">
+    <main class="main-section" role="main">
       <section class="invite-list">
         <h2 class="list-header">Invitation List</h2>
         <div id="invited-hedgehogs-info">
           <article class="invited-hedgehog">
-            <p class="name"><strong>Name</strong></p>
-            <p class="hoglet-number"><strong># of Hoglets</strong></p>
-            <p class="allergies"><strong>Allergies</strong></p>
+            <p class="name">
+              <strong>Name</strong>
+            </p>
+            <p class="hoglet-number">
+              <strong># of Hoglets</strong>
+            </p>
+            <p class="allergies">
+              <strong>Allergies</strong>
+            </p>
             <div class="hidden"></div>
           </article>
           <article class="invited-hedgehog">
@@ -28,27 +34,31 @@
               uninvite
             </button>
           </article>
-          <div id="hedgehog-info"></div>
+          <div id="hedgehog-info" alt="Photo of hedgehog with birthday hat on"></div>
         </div>
       </section>
       <section class="form-section">
         <h2 class="invite-header">Invite another Hedgehog</h2>
         <form class="form-container" action="">
           <article class="form">
-            <input id="name"type="text" name="" value="" placeholder="Name of Hedgehog">
-            <input id="hoglets"type="number" name="" value="" placeholder="Number of Hoglets">
-            <input id="allergies"type="text" name="" value="" placeholder="Allergies">
+            <label for="name">
+              <input id="name" type="text" placeholder="Name of Hedgehog" aria-required="true">
+            </label>
+            <label for="hoglets">
+              <input id="hoglets"type="number" placeholder="Number of Hoglets" aria-required="true">
+            </label>
+            <label for="allergies">
+              <input id="allergies"type="text" placeholder="Allergies" aria-required="true">
+            </label>
             <button id="invite-btn">Invite!</button>
           </article>
-        <div class="hedgie-photo"></div>
+          <div class="hedgie-photo"></div>
         </form>
       </section>
     </main>
     <script
     src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'>
     </script>
-    <script
-      type="text/javascript" src="index.js">
-    </script>
+    <script type="text/javascript" src="index.js"></script>
   </body>
 </html>
