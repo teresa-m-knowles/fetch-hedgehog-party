@@ -30,7 +30,7 @@
             <p class="name">Name</p>
             <p class="hoglet-number">15</p>
             <p class="allergies">Allergies</p>
-            <button id="${hedgehog.id}" class="uninvite-btn">
+            <button id="${hedgehog.id}" class="uninvite-btn" aria-label="Uninvite">
               uninvite
             </button>
           </article>
@@ -41,16 +41,16 @@
         <h2 class="invite-header">Invite another Hedgehog</h2>
         <form class="form-container" action="">
           <article class="form">
-            <label for="name">
+            <label for="name" aria-label="Name Input">
               <input id="name" type="text" placeholder="Name of Hedgehog" aria-required="true">
             </label>
-            <label for="hoglets">
+            <label for="hoglets" aria-label="Number of Hoglets Input">
               <input id="hoglets"type="number" placeholder="Number of Hoglets" aria-required="true">
             </label>
-            <label for="allergies">
+            <label for="allergies" aria-label="Allergies Input">
               <input id="allergies"type="text" placeholder="Allergies" aria-required="true">
             </label>
-            <button id="invite-btn">Invite!</button>
+            <button id="invite-btn" aria-label="Invite">Invite!</button>
           </article>
           <div class="hedgie-photo"></div>
         </form>
