@@ -115,7 +115,7 @@ input::placeholder {
 }
 
 #invite-btn {
-  background-color: #7fa0f4;
+  background-color: #3b4071;
   color: #fff;
   transition: all 0.5s;
   text-transform: uppercase;
@@ -123,5 +123,5 @@ input::placeholder {
 }
 
 #invite-btn:hover {
-  background-color: #5e7dcf;
+  background-color: #362256;
 }
