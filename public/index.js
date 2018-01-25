@@ -1,7 +1,8 @@
 const getHedgehogs = () => {
   $('#hedgehog-info').html('');
-  
+
 };
+
 
 const addNewHedgehog = () => {
 
@@ -18,3 +19,5 @@ $(document).ready(() => {
 $('#invite-btn').on('click', addNewHedgehog);
 
 $('#invited-hedgehogs-info').on('click', '.uninvite-btn', unInviteHedgehog);
+
+//URL: https://hedgehog-party.herokuapp.com/api/v1/invites
