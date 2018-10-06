@@ -14,7 +14,34 @@ https://hedgehog-party.herokuapp.com/
 
 ## Endpoints
 
-GET `/api/v1/invites`
+**GET `/api/v1/invites`**
+
+Example Response: 
+```json
+[
+  {
+    "id": 1,
+    "name": "Sonic",
+    "hoglets": 3,
+    "allergies": "none",
+    "created_at": null
+  },
+  {
+    "id": 2,
+    "name": "Shark",
+    "hoglets": 7,
+    "allergies": "rice",
+    "created_at": null
+  },
+  {
+    "id": 3,
+    "name": "Sunny",
+    "hoglets": 0,
+    "allergies": "spicy foods",
+    "created_at": null
+  }
+]
+```
 
 POST `/api/v1/invites`
 
