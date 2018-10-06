@@ -9,20 +9,24 @@ const getHedgehogs = () => {
 
 const appendHedgehogs = (hedgehogs) => {
   hedgehogs.forEach(hedgehog => {
-    $('#invited-hedgehogs-info').append(`
-      <article class="invited-hedgehog">
-        <p class="name">${hedgehog.name}</p>
-        <p class="hoglet-number">${hedgehog.hoglets}</p>
-        <p class="allergies">${hedgehog.allergies}</p>
-        <button
-          id="${hedgehog.id}"
-          class="uninvite-btn"
-          aria-label="Uninvite">
-          uninvite
-        </button>
-      </article>
-    `);
+    appendHedgehog(hedgehog);
   });
+};
+
+const appendHedgehog = (hedgehog) => {
+  $('#invited-hedgehogs-info').append(`
+    <article class="invited-hedgehog">
+      <p class="name">${hedgehog.name}</p>
+      <p class="hoglet-number">${hedgehog.hoglets}</p>
+      <p class="allergies">${hedgehog.allergies}</p>
+      <button
+        id="${hedgehog.id}"
+        class="uninvite-btn"
+        aria-label="Uninvite">
+        uninvite
+      </button>
+    </article>
+  `);
 };
 
 const addNewHedgehog = () => {
