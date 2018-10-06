@@ -43,7 +43,32 @@ Example Response:
 ]
 ```
 
-POST `/api/v1/invites`
+**POST `/api/v1/invites`**
 
-DELETE `/api/v1/invites/:id`
+Expected Request Format:
+```json
+ {
+    "name": "Sofie",
+    "hoglets": 3,
+    "allergies": "advil"
+  }
+```
 
+Successful Return Value:
+```json
+{
+    "id": 219
+}
+```
+
+If one of the required properties is missing in post request, a 422 status code along with a response body informing you of the first missing property:
+
+```json
+{
+    "error": "You are missing the <name/hoglets/allergies> property."
+}
+```
+
+**DELETE `/api/v1/invites/:id`**
+
+No return value on a successful delete.
