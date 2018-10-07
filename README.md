@@ -53,7 +53,6 @@ Example Response:
 ]
 ```
 
-<<<<<<< HEAD
 **POST `/api/v1/invites`**
 
 Expected Request Format:
