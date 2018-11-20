@@ -10,7 +10,7 @@ Clone down the repo and follow setup instructions. Look through the JavaScript i
 
 **Step 2:** Now, the other partner should drive. Work together to write the request to DELETE a hedgehog from the invite list.
 
-NOTE: Both tasks require network requests as well as DOM manipulation. This is good practice for Quantified Self😊
+NOTE: Both tasks require network requests as well as DOM manipulation. This is good practice for Quantified Self/Play😊
 
 ## Setup
 
